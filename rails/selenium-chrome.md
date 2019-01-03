@@ -11,13 +11,13 @@ gem 'chromedriver-helper'
 Usage:
 
 ```ruby
-    Capybara.register_driver :selenium do |app|
-      Capybara::Selenium::Driver.new(app, browser: :chrome)
-    end
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
 
-    Capybara.javascript_driver = :chrome
-    Capybara.default_driver = :chrome
+Capybara.javascript_driver = :chrome
+Capybara.default_driver = :chrome
 
-    @session = Capybara::Session.new(:selenium, :js_errors => false)
-    @session.visit 'https://example.com'
+@session = Capybara::Session.new(:selenium, :js_errors => false)
+@session.visit 'https://example.com'
 ```
