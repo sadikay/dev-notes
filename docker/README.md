@@ -25,3 +25,10 @@ Conntect to container then:
 
 #### Restore
 `cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE`
+
+
+#### mySQL dump
+`mysqldump -P 3306  -h localhost -u root -p db_name > ~/Desktop/dump.sql`
+
+##### mySQL import
+`mysql -u root -p db_name < ~/Desktop/latest-dump.sql`
