@@ -24,3 +24,7 @@ function rebaser(){
 ```
 
 Usage: Just type `rebaser` in your feature branch.
+
+#### Checkout untracked git local files
+
+`git clean -f -d`
