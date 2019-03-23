@@ -15,7 +15,7 @@ sudo ln -sf /usr/local/n/versions/node/v7.4.0/bin/node /usr/bin/node
 
 echo "Essential Configns installing..."
 sudo apt-get update
-sudo apt-get install -y build-essential chrpath libssl-dev libxft-dev
+sudo apt-get install -y build-essential chrpath libxft-dev
 sudo apt-get install -y libfreetype6 libfreetype6-dev
 sudo apt-get install -y ilibfontconfig1 libfontconfig1-dev
 
@@ -39,8 +39,8 @@ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profil
 source ~/.bash_profile
 
 echo "Installing ruby version..."
-rbenv install -v 2.4.2
-rbenv global 2.4.2
+rbenv install -v 2.6.1
+rbenv global 2.6.1
 echo "gem: --no-document" > ~/.gemrc
 gem install bundler
 
